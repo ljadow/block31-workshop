@@ -8,7 +8,6 @@ const pets = [
         owner: 'John',
         telephone: '555-555-5555',
         appointments: [
-
             {
                 date: '01/01/2020',
                 time: '10:00',

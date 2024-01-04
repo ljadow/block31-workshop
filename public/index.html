@@ -9,7 +9,18 @@
 </head>
 <body>
     <h1>Pet Finder</h1>
-    
+    <a href="/api">API Link</a><br/>
+    <a href="/api/v1/pets">Pets Link</a><br/>
+    <form action="/api/v1/pets/owner/">
+        Find pet by 
+        <label for="owner">owner</label>
+        <select id="owner" name="owner">
+            <option value="" disabled selected></option>
+            <option value="Jane">Jane</option>
+            <option value="John">John</option>
+        </select>
+        <input type="submit" value="Submit" />
+    </form><br/>
     <script src="script.js"></script>
 </body>
 </html>
