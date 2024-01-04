@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Pet Finder</h1>
-    <a href="/api">API Link</a><br/>
-    <a href="/api/v1/pets">Pets Link</a><br/>
+    <a href="/api">API Link</a><br />
+    <a href="/api/v1/pets">Pets Link</a><br />
     <form action="/api/v1/pets/owner/">
-        Find pet by 
+        Find pet by
         <label for="owner">owner</label>
         <select id="owner" name="owner">
             <option value="" disabled selected></option>
@@ -20,7 +22,20 @@
             <option value="John">John</option>
         </select>
         <input type="submit" value="Submit" />
-    </form><br/>
+    </form><br />
+    <div>
+        See details for:
+        <a href="/api/v1/pets/Fido" style="text-decoration: none">
+            <button>Fido</button>
+        </a>
+        <a href="/api/v1/pets/Rover" style="text-decoration: none">
+            <button>Rover</button>
+        </a>
+        <a href="/api/v1/pets/Spot" style="text-decoration: none">
+            <button>Spot</button>
+        </a>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
